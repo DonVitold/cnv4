@@ -1,0 +1,148 @@
+/* ==================== Header Styling ==================== */
+
+/* Logo */
+#logo {
+    padding: 10px;
+    height: 100%;
+}
+#logo a {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: auto;
+    height: 100%;
+}
+#logo svg, #logo img {
+    display: block;
+    width: auto;
+    height: 50px;
+    max-width: 300px;
+}
+@media screen and (min-width:768px) {
+    #logo svg, #logo img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Service Area */
+#header-service-area p {
+    margin-top: 10px;
+    margin-bottom:0;
+    font-size:14px;
+}
+/* Phone/Contact Container */
+#contact {
+    display: block;
+    text-align: right;
+    height: 100%;
+}
+#contact #phone-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+#contact #phone {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+}
+#contact .opensign {
+    display: block;
+}
+@media screen and (max-width:519px) {
+    #header .grid-container {
+        padding-left:0;
+        padding-right:0;
+    }
+    #contact {
+        background-color: #444;
+    }
+    #contact #phone-wrap {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:768px) {
+    #contact {
+        height: auto;
+    }
+    #contact #phone-wrap {
+        height: auto;
+        margin: 5px 0;
+    }
+    #contact #phone {
+        font-size: 32px;
+    }
+}
+
+/* ==================== Navigation ==================== */
+#menu-icon-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.menu-icon {
+    display: block;
+    padding: 6px;
+    margin: 8px;
+    width: auto;
+}
+.menu-icon span {
+    height: 2px;
+    width: 22px;
+    margin: 4px 0;
+    display: block;
+}
+#nav-bar {
+    background-color: #444;
+}
+/* Menu Bar Element */
+#nav-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Individual Nav Items */
+#nav-menu .nav-item > a {
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    font-weight: bold;
+}
+#nav-menu .nav-item > ul {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left:0;
+}
+#nav-menu .nav-item > ul a {
+    display: block;
+    padding: 10px;
+    min-width: 300px;
+}

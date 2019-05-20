@@ -1,0 +1,129 @@
+/* Header Styling */
+@media screen and (min-width: 520px) {
+    #header .cell {
+        height: 70px;
+    }
+}
+/* Logo */
+#logo {
+    padding: 10px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+#logo a {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#logo svg, #logo img {
+    display: block;
+    width: auto;
+    height: 50px;
+    max-width: 100%;
+}
+/* Service Area */
+
+/* Phone/Contact Container */
+#contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+@media screen and (min-width: 520px) {
+    #contact {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+}
+#contact #phone {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+}
+#contact .opensign {
+    display: block;
+}
+/* Navigation */
+.menu-icon {
+    display: block;
+    padding: 6px;
+    margin: 8px;
+}
+.menu-icon span {
+    height: 2px;
+    width: 22px;
+    margin: 4px 0;
+    display: block;
+}
+
+#nav-bar {
+    height: 100%;
+}
+/* Menu Bar Element */
+#nav-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+/* Individual Nav Items */
+#nav-menu .nav-item {
+    display: none;
+}
+#nav-menu .nav-item > a {
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    font-weight: bold;
+}
+#nav-menu .nav-item > ul {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left:0;
+}
+#nav-menu .nav-item > ul a {
+    display: block;
+    padding: 10px;
+    min-width: 300px;
+}
+/* Specifies the breakpoint at which to hide menu icon and show nav items */
+@media screen and (min-width:1025px) {
+    #nav-menu {
+        justify-content: center;
+    }
+    #nav-menu .nav-item {
+        display: block;
+    }
+    .menu-icon {
+        display: none;
+    }
+}

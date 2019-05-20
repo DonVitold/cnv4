@@ -1,0 +1,9 @@
+.DS_Store
+bower_components
+node_modules
+npm-debug.log
+etc
+/js/plugins
+scss
+gulpfile.js
+FoundationTest.code-workspace
