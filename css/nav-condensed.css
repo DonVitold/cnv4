@@ -141,12 +141,14 @@
     justify-content: flex-end;
     align-items: center;
 }
+
 /* Individual Nav Items */
 #nav-menu .nav-item > a {
     display: block;
     padding: 10px;
     line-height: 20px;
     font-weight: bold;
+    text-align: left;
 }
 #nav-menu .nav-item > ul {
     margin: 0;
